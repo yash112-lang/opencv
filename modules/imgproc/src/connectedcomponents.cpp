@@ -2584,7 +2584,7 @@ namespace cv{
                         #define condition_b c-1>=0 && r > limitLine && img_row_prev_prev[c-1]>0
                         #define condition_c r > limitLine && img_row_prev_prev[c]>0
                         #define condition_d c+1<w && r > limitLine && img_row_prev_prev[c+1]>0
-                        #define condition_e c+2<w && r > limitLine && img_row_prev_prev[c+2]>0
+                        #define condition_e c+2<w && r-2>=0 && img_row_prev_prev[c+2]>0
 
                         #define condition_g c-2>=0 && r > limitLine - 1 && img_row_prev[c-2]>0
                         #define condition_h c-1>=0 && r > limitLine - 1 && img_row_prev[c-1]>0
